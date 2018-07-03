@@ -180,6 +180,10 @@ namespace Calculator
             if (mainDisplay.Text != "0")
             {
                 mainDisplay.Text = mainDisplay.Text.Substring(0, (mainDisplay.Text.Length - 1));
+                if(mainDisplay.Text == "")
+                {
+                    mainDisplay.Text = "0";
+                }
             }
         }
 
